@@ -1,0 +1,11 @@
+{
+  "item.grandworld.imperite_dust" : "Imperite Dust",
+  "item.grandworld.imperite_ingot" : "Imperite Ingot",
+
+  "block.grandworld.imperite_dust_block" : "Imperite Dust Block",
+  "block.grandworld.imperite_dust_ore" : "Imperite Dust Ore",
+  "block.grandworld.imperite_block" : "Imperite Block",
+
+  "itemGroup.grandworld.imperial_items" : "Imperial Items",
+  "itemGroup.grandworld.imperial_blocks" : "Imperial blocks"
+}
