@@ -28,7 +28,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.IMPERITE_DUST_BLOCK);
                         entries.add(ModBlocks.IMPERITE_BLOCK);
-                        entries.add(ModBlocks.IMPERITE_DUST_ORE);
+                        entries.add(ModBlocks.IMPERITE_ORE);
+                        entries.add(ModBlocks.IMPERITE_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.COMPACTOR_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

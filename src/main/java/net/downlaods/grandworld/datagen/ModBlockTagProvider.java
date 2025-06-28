@@ -19,10 +19,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.IMPERITE_DUST_BLOCK)
                 .add(ModBlocks.IMPERITE_BLOCK)
-                .add(ModBlocks.IMPERITE_DUST_ORE);
+                .add(ModBlocks.IMPERITE_ORE)
+                .add(ModBlocks.IMPERITE_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.IMPERITE_DUST_ORE)
+                .add(ModBlocks.IMPERITE_ORE)
+                .add(ModBlocks.IMPERITE_DEEPSLATE_ORE)
                 .add(ModBlocks.IMPERITE_BLOCK);
 
     }

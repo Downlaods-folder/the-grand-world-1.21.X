@@ -1,6 +1,7 @@
 package net.downlaods.grandworld.block;
 
 import net.downlaods.grandworld.TheGrandWorld;
+import net.downlaods.grandworld.block.custom.CompactorBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -16,21 +17,33 @@ public class ModBlocks {
 
     public static final Block IMPERITE_DUST_BLOCK = registerBlock("imperite_dust_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(1f)
+                    .strength(1.5f,1f)
                     .sounds(BlockSoundGroup.CHAIN)));
 
     public static final Block IMPERITE_BLOCK = registerBlock("imperite_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
+                    .strength(12f,5f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.CHAIN)));
 
-    public static final Block IMPERITE_DUST_ORE = registerBlock("imperite_dust_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(5, 8),
+    public static final Block IMPERITE_ORE = registerBlock("imperite_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 8),
                     AbstractBlock.Settings.create()
-                            .strength(4f)
+                            .strength(4f,3f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.SOUL_SAND)));
+
+    public static final Block IMPERITE_DEEPSLATE_ORE = registerBlock("imperite_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 8),
+                    AbstractBlock.Settings.create()
+                            .strength(4.5f,3f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.SOUL_SAND)));
+
+    public static final Block COMPACTOR_BLOCK = registerBlock("compactor_block",
+            new CompactorBlock(AbstractBlock.Settings.create()
+                    .strength(4f, 10f)
+                    .sounds(BlockSoundGroup.ANVIL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

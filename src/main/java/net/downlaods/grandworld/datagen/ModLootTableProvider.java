@@ -28,8 +28,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.IMPERITE_BLOCK);
         addDrop(ModBlocks.IMPERITE_DUST_BLOCK);
+        addDrop(ModBlocks.COMPACTOR_BLOCK);
 
-        addDrop(ModBlocks.IMPERITE_DUST_ORE, multipleOreDrops(ModBlocks.IMPERITE_DUST_ORE, ModItems.IMPERITE_DUST, 3, 7));
+        addDrop(ModBlocks.IMPERITE_ORE, multipleOreDrops(ModBlocks.IMPERITE_ORE, ModItems.IMPERITE_DUST, 1, 3));
+        addDrop(ModBlocks.IMPERITE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.IMPERITE_DEEPSLATE_ORE, ModItems.IMPERITE_DUST, 3, 7));
 
     }
 

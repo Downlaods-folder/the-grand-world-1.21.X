@@ -3,9 +3,13 @@
   "item.grandworld.imperite_ingot" : "Imperite Ingot",
 
   "block.grandworld.imperite_dust_block" : "Imperite Dust Block",
-  "block.grandworld.imperite_dust_ore" : "Imperite Dust Ore",
+  "block.grandworld.imperite_ore" : "Imperite Ore",
+  "block.grandworld.imperite_deepslate_ore" : "Deepslate Imperite Ore",
   "block.grandworld.imperite_block" : "Imperite Block",
+  "block.grandworld.compactor_block" : "Compactor Block",
 
   "itemGroup.grandworld.imperial_items" : "Imperial Items",
-  "itemGroup.grandworld.imperial_blocks" : "Imperial blocks"
+  "itemGroup.grandworld.imperial_blocks" : "Imperial blocks",
+
+  "tooltip.grandworld.compactor_block.tooltip" : "This block can §9Crush§r items!"
 }
