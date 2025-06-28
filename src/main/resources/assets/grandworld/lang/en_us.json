@@ -11,5 +11,5 @@
   "itemGroup.grandworld.imperial_items" : "Imperial Items",
   "itemGroup.grandworld.imperial_blocks" : "Imperial blocks",
 
-  "tooltip.grandworld.compactor_block.tooltip" : "This block can §9Crush§r items!"
+  "tooltip.grandworld.compactor_block.tooltip" : "This block can §9Compact§r items!"
 }
