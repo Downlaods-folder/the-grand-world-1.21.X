@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -19,7 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPERITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPERITE_DEEPSLATE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPERITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COMPACTOR_BLOCK);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.COMPACTOR_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
     }
 
     @Override
