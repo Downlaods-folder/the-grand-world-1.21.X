@@ -3,7 +3,6 @@ package net.downlaods.grandworld.item;
 import net.downlaods.grandworld.TheGrandWorld;
 import net.downlaods.grandworld.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -19,6 +18,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.IMPERITE_DUST);
                         entries.add(ModItems.IMPERITE_INGOT);
+                        entries.add(ModItems.IMPERITE_SWORD);
+                        entries.add(ModItems.IMPERITE_PICKAXE);
+                        entries.add(ModItems.IMPERITE_SHOVEL);
+                        entries.add(ModItems.IMPERITE_AXE);
+                        entries.add(ModItems.IMPERITE_HOE);
                     }).build());
 
     public static final ItemGroup IMPERIAL_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

@@ -2,6 +2,13 @@
   "item.grandworld.imperite_dust" : "Imperite Dust",
   "item.grandworld.imperite_ingot" : "Imperite Ingot",
 
+  "item.grandworld.imperite_sword" : "Imperite Sword",
+  "item.grandworld.imperite_pickaxe" : "Imperite Pickaxe",
+  "item.grandworld.imperite_shovel" : "Imperite Shovel",
+  "item.grandworld.imperite_axe" : "Imperite Axe",
+  "item.grandworld.imperite_hoe" : "Imperite Hoe",
+
+
   "block.grandworld.imperite_dust_block" : "Imperite Dust Block",
   "block.grandworld.imperite_ore" : "Imperite Ore",
   "block.grandworld.imperite_deepslate_ore" : "Deepslate Imperite Ore",
