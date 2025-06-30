@@ -23,6 +23,8 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPERITE_SHOVEL);
                         entries.add(ModItems.IMPERITE_AXE);
                         entries.add(ModItems.IMPERITE_HOE);
+
+                        entries.add(ModItems.IMPERITE_HAMMER);
                     }).build());
 
     public static final ItemGroup IMPERIAL_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

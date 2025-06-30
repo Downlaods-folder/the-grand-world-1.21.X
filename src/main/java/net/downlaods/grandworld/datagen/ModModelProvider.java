@@ -35,5 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IMPERITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IMPERITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IMPERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.IMPERITE_HAMMER, Models.HANDHELD);
     }
 }

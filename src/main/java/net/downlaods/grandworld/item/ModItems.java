@@ -1,6 +1,7 @@
 package net.downlaods.grandworld.item;
 
 import net.downlaods.grandworld.TheGrandWorld;
+import net.downlaods.grandworld.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -30,6 +31,11 @@ public class ModItems {
     public static final Item IMPERITE_HOE = registerItem("imperite_hoe", new HoeItem(ModToolMaterials.IMPERITE, new Item.Settings()
             .fireproof()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.IMPERITE, -5.0f, -3f))));
+
+    public static final Item IMPERITE_HAMMER = registerItem("imperite_hammer",
+            new HammerItem(ModToolMaterials.IMPERITE, new Item.Settings()
+                    .fireproof()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.IMPERITE, 7, -3.4f))));
 
 
 //    Items Above, Registry code below

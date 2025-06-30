@@ -29,6 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.IMPERITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.IMPERITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.IMPERITE_DUST, RecipeCategory.DECORATIONS, ModBlocks.IMPERITE_DUST_BLOCK);
 
+//        Imperite Tools
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IMPERITE_SWORD)
                 .pattern(" I ")
                 .pattern(" I ")
@@ -71,6 +72,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .input('I', ModItems.IMPERITE_INGOT)
                 .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IMPERITE_HAMMER)
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', ModBlocks.IMPERITE_BLOCK)
+                .input('S', ModItems.IMPERITE_INGOT)
                 .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
                 .offerTo(exporter);
 
