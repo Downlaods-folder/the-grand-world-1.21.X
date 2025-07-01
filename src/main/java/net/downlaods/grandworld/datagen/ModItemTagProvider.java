@@ -30,5 +30,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.IMPERITE_HOE);
 
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.IMPERITE_HELMET)
+                .add(ModItems.IMPERITE_CHESTPLATE)
+                .add(ModItems.IMPERITE_LEGGINGS)
+                .add(ModItems.IMPERITE_BOOTS);
     }
 }

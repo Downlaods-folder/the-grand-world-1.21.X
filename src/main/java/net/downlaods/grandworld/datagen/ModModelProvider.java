@@ -8,6 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -37,5 +38,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IMPERITE_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.IMPERITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_BOOTS));
     }
 }

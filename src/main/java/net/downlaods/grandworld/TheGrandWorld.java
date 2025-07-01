@@ -1,6 +1,7 @@
 package net.downlaods.grandworld;
 
 import net.downlaods.grandworld.block.ModBlocks;
+import net.downlaods.grandworld.effect.ModEffects;
 import net.downlaods.grandworld.item.ModItemGroups;
 import net.downlaods.grandworld.item.ModItems;
 import net.downlaods.grandworld.util.HammerUsageEvent;
@@ -22,6 +23,8 @@ public class TheGrandWorld implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
+
+		ModEffects.registerEffects();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 

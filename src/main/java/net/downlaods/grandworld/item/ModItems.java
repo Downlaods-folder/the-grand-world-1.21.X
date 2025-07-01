@@ -2,6 +2,7 @@ package net.downlaods.grandworld.item;
 
 import net.downlaods.grandworld.TheGrandWorld;
 import net.downlaods.grandworld.item.custom.HammerItem;
+import net.downlaods.grandworld.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -12,6 +13,7 @@ public class ModItems {
     public static final Item IMPERITE_DUST = registerItem("imperite_dust", new Item(new Item.Settings()));
     public static final Item IMPERITE_INGOT = registerItem("imperite_ingot", new Item(new Item.Settings()));
 
+//    Tools
     public static final Item IMPERITE_SWORD = registerItem("imperite_sword", new SwordItem(ModToolMaterials.IMPERITE, new Item.Settings()
             .fireproof()
             .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.IMPERITE, 3, -2.4f))));
@@ -37,6 +39,26 @@ public class ModItems {
                     .fireproof()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.IMPERITE, 7, -3.4f))));
 
+//    Armor
+    public static final Item IMPERITE_HELMET = registerItem("imperite_helmet",
+        new ModArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                .fireproof()
+                .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+
+    public static final Item IMPERITE_CHESTPLATE = registerItem("imperite_chestplate",
+            new ArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+
+    public static final Item IMPERITE_LEGGINGS = registerItem("imperite_leggings",
+            new ArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+
+    public static final Item IMPERITE_BOOTS = registerItem("imperite_boots",
+            new ArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
 
 //    Items Above, Registry code below
 

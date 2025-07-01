@@ -84,6 +84,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
                 .offerTo(exporter);
 
+//        Imperite Armor
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IMPERITE_HELMET)
+                .pattern("SSS")
+                .pattern("S S")
+                .input('S', ModItems.IMPERITE_INGOT)
+                .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IMPERITE_CHESTPLATE)
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', ModItems.IMPERITE_INGOT)
+                .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IMPERITE_LEGGINGS)
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.IMPERITE_INGOT)
+                .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IMPERITE_BOOTS)
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.IMPERITE_INGOT)
+                .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
+                .offerTo(exporter);
+
 
     }
 }
