@@ -1,5 +1,6 @@
 package net.downlaods.grandworld.datagen;
 
+import net.downlaods.grandworld.TheGrandWorld;
 import net.downlaods.grandworld.block.ModBlocks;
 import net.downlaods.grandworld.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -116,6 +118,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPERITE_INGOT), conditionsFromItem(ModItems.IMPERITE_INGOT))
                 .offerTo(exporter);
 
+        offerSmithingTrimRecipe(exporter, ModItems.EMPEROR_SMITHING_TEMPLATE, Identifier.of(TheGrandWorld.MOD_ID, "emperor"));
 
     }
 }

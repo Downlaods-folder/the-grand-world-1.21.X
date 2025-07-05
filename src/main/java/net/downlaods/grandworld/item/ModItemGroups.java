@@ -30,6 +30,10 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPERITE_CHESTPLATE);
                         entries.add(ModItems.IMPERITE_LEGGINGS);
                         entries.add(ModItems.IMPERITE_BOOTS);
+
+                        entries.add(ModItems.IMPERITE_HORSE_ARMOR);
+
+                        entries.add(ModItems.EMPEROR_SMITHING_TEMPLATE);
                     }).build());
 
     public static final ItemGroup IMPERIAL_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

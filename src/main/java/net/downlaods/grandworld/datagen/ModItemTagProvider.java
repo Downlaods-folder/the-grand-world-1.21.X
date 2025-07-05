@@ -35,5 +35,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.IMPERITE_CHESTPLATE)
                 .add(ModItems.IMPERITE_LEGGINGS)
                 .add(ModItems.IMPERITE_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.IMPERITE_INGOT);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.EMPEROR_SMITHING_TEMPLATE);
     }
 }

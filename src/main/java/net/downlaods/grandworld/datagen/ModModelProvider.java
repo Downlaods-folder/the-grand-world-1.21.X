@@ -43,5 +43,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPERITE_BOOTS));
+
+        itemModelGenerator.register(ModItems.IMPERITE_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.EMPEROR_SMITHING_TEMPLATE, Models.GENERATED);
     }
 }

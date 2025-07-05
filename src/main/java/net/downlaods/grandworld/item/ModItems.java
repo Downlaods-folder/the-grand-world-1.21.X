@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -59,6 +60,12 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .fireproof()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+
+    public static final Item IMPERITE_HORSE_ARMOR = registerItem("imperite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.IMPERITE_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
+    public static final Item EMPEROR_SMITHING_TEMPLATE = registerItem("emperor_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(TheGrandWorld.MOD_ID, "emperor"), FeatureFlags.VANILLA));
 
 //    Items Above, Registry code below
 

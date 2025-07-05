@@ -15,6 +15,10 @@
   "item.grandworld.imperite_leggings" : "Imperite Leggings",
   "item.grandworld.imperite_boots" : "Imperite Boots",
 
+  "item.grandworld.imperite_horse_armor" : "Imperite Horse Armor",
+
+  "item.grandworld.emperor_armor_trim_smithing_template" : "Emperor Smithing Template",
+
   "block.grandworld.imperite_dust_block" : "Imperite Dust Block",
   "block.grandworld.imperite_ore" : "Imperite Ore",
   "block.grandworld.imperite_deepslate_ore" : "Deepslate Imperite Ore",
@@ -26,5 +30,8 @@
   "itemGroup.grandworld.imperial_items" : "Imperial Items",
   "itemGroup.grandworld.imperial_blocks" : "Imperial blocks",
 
-  "tooltip.grandworld.compactor_block.tooltip" : "This block can §9Compact§r items!"
+  "tooltip.grandworld.compactor_block.tooltip" : "This block can §9Compact§r items!",
+
+  "trim_material.grandworld.imperite": "Imperite Material",
+  "trim_pattern.grandworld.emperor": "Emperor Armor Pattern"
 }
